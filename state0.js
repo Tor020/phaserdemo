@@ -9,6 +9,7 @@ demo.state0.prototype = {
     create: function()
     {  // game.input.keyboard.addKey(Phaser.Keyboard.ONE).onDown.add(changeState, null,null, 1) //phaser calls the change State function defined below and passes it two null arguements and 1 argument to be paseed with changeState
         addChangeStateEventListeners();
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL; //this allows the game to resize to the size of the window that it's running in. it will resize across all states 
 
     
     game.stage.backgroundColor = '#80ff80';
